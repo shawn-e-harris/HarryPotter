@@ -1,0 +1,2790 @@
+/* universal styles */
+body {
+    text-align: center;
+    font-family: "roboto";
+    margin: 0;
+}
+.entertainmentBody {
+    /* image sourced from https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Forbidden_Journey */
+    background-image: url(/images/htmlbg.png);
+}
+.logo {
+    /* image sourced from https://www.syfy.com/syfywire/speed-watch-harry-potter-series-78-minutes */
+    background-image: url(/images/HarryPotter_0.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 76vh;
+}
+
+a:link {
+    /* remove underline */
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/font/HARRYP__.TTF);
+}
+h1 {
+    font-family: myFirstFont;
+    font-size: 60px;
+    margin: 0 auto;
+    padding: 14px 16px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+h2 {
+    font-size: 17px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+h3 {
+    font-size: 12px;
+    margin-top: 0;
+    font-weight: 400;
+}
+h4 {
+    font-size: 8px;
+    margin: 0 auto;
+    color: black;
+}
+
+  
+/* Nav Bar */
+/* Nav Bar */
+/* Nav Bar */
+.homeButton {
+    padding: 0;
+}
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 50px;
+    font-size: 10pt;
+    background-color: black;
+    color: white;
+}
+.crest {
+    height: 40px;
+    width: 40px;
+    animation: crestChange 10s infinite;
+    background-size: cover;
+}
+@keyframes crestChange {
+    0% {background-image: url(/images/Gryffindor_Crest.png);}
+    25% {background-image: url(/images/Hufflepuff_Crest.png);}
+    50% {background-image: url(/images/Ravenclaw_Crest.png);}
+    75% {background-image: url(/images/Slytherin_Crest.png);}
+    100% {background-image: url(/images/Gryffindor_Crest.png);}
+}
+.hatFloat {
+    height: 200px;
+}
+.hat {
+    animation: hatDip 5s infinite;
+    position: absolute;
+    margin-left: -75px;
+}
+@keyframes hatDip {
+    0%  {top:150px;}
+  50%   {top:175px;}
+  100%  {top:150px;}
+}
+.header{
+    display: flex;
+    position: relative;
+}
+/* hides navBar lists */
+#seeNavBarA {
+    display: none;
+    font-size: 7pt;
+    position: absolute;
+    padding-left: -50pt;
+}
+#seeNavBarE {
+    display: none;
+    font-size: 7pt;
+    position: absolute;
+    padding-left: 20pt;
+}
+#seeNavBarP {
+    display: none;
+    font-size: 7pt;
+    position: absolute;
+    padding-left: 3pt;
+}
+/* remove bullet points */
+ul {
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    font-size: 10pt;
+}
+.dropdownA {
+    font-size: 7pt;
+}
+/* remove bullet points */
+a {
+    color: white;
+    list-style-type: none;
+}
+a:hover {
+    color: red;
+    font-weight: 900;
+}
+#hogsmeade {
+    display: grid;
+}
+#diagonAlley {
+    display: grid; 
+}
+
+
+
+/* Tabs */
+/* Tabs */
+/* Tabs */
+
+.tabsContainer {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #f1f1f1;
+    width: 60vw;
+    margin: auto;
+    border-radius: 2pt 2pt 0 0;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+}
+.ridesTab {
+    width: 50%;
+}
+.tabsContainer button {
+    background-color: rgb(61, 1, 61);
+    /* makes tabs side by side */
+    float: left;
+    border: none;
+    outline: none;
+    /* cursor: pointer; */
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+}
+/* change tab background color on hover */
+.tabsContainer button:hover {
+    background-color: rgb(29, 1, 29);
+}
+/* active (whichever one is currently visible tab class color */
+.tabsContainer button.active {
+    background-color: white;
+    color: black;
+    /* make bold */
+    font-weight: 900;
+}
+.tabContent {
+    display: none;
+    border-top: none;
+}
+
+
+
+/* Dining H */
+/* Dining H */
+/* Dining H */
+
+.diningHContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+/* Hogs Head */
+.hogsHeadContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.hogsHeadInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.hogsHead {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.hogsHeadDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.hogsHeadImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Three Broomsticks */
+.threeBroomsticksContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.threeBroomsticksInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.threeBroomsticks {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.threeBroomsticksDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    padding: 10pt;
+    text-align: left;
+}
+.threeBroomsticksImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+/* Dining DA */
+/* Dining DA */
+/* Dining DA */
+
+.diningDAContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+/* Eternelle's Elixir */
+.eternellesContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.eternellesInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.eternelles {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.eternellesDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.eternellesImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Florean Fortescue's */
+.floreanContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.floreanInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.florean {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.floreanDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    text-align: left;
+}
+.floreanImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Leaky Cauldron™ */
+.leakyCauldronContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 19;
+    grid-row-end: 27;
+    display: flex;
+    height: 100px;
+}
+.leakyCauldronInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 20;
+    grid-row-end: 26;
+}
+.leakyCauldron {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    padding: 10pt;
+    text-align: left;
+}
+.leakyCauldronDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 23;
+    grid-row-end: 25; 
+    padding: 10pt;
+    text-align: left;
+}
+.leakyCauldronImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 20;
+    grid-row-end: 26;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Fountain of Fair Fortune */
+.fairFortuneContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 27;
+    grid-row-end: 35;
+    display: flex;
+    height: 100px;
+}
+.fairFortuneInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 28;
+    grid-row-end: 34;
+}
+.fairFortune {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 29;
+    grid-row-end: 30;
+    padding: 10pt;
+    text-align: left;
+}
+.fairFortuneDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 31;
+    grid-row-end: 33; 
+    padding: 10pt;
+    text-align: left;
+}
+.fairFortuneImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 28;
+    grid-row-end: 34;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Hopping Pot */
+.hoppingPotContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 35;
+    grid-row-end: 43;
+    display: flex;
+    height: 100px;
+}
+.hoppingPotInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 36;
+    grid-row-end: 42;
+}
+.hoppingPot {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 37;
+    grid-row-end: 38;
+    padding: 10pt;
+    text-align: left;
+}
+.hoppingPotDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 39;
+    grid-row-end: 41; 
+    padding: 10pt;
+    text-align: left;
+}
+.hoppingPotImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 34;
+    grid-row-end: 42;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+/* Rides H */
+/* Rides H */
+/* Rides H */
+
+.ridesHContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+.detailLink {
+    color: rgb(61, 1, 61);
+}
+/* Hippogriff Flight */
+.hippogriffContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.hippogriffInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.hippogriff {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.hippogriffDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.hippogriffImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Hagrid */
+.hagridContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.hagridLightsInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.hagrid {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.hagridDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    text-align: left;
+}
+.hagridImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Forbidden Journey */
+.forbiddenJourneyContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 19;
+    grid-row-end: 27;
+    display: flex;
+    height: 100px;
+}
+.forbiddenJourneyInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 20;
+    grid-row-end: 26;
+}
+.forbiddenJourney {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    padding: 10pt;
+    text-align: left;
+}
+.forbiddenJourneyDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 23;
+    grid-row-end: 25; 
+    padding: 10pt;
+    text-align: left;
+}
+.forbiddenJourneyImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 20;
+    grid-row-end: 26;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Hogwarts Express */
+.hogwartsEContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 27;
+    grid-row-end: 35;
+    display: flex;
+    height: 100px;
+}
+.hogwartsEInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 28;
+    grid-row-end: 34;
+}
+.hogwartsE {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 29;
+    grid-row-end: 30;
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 31;
+    grid-row-end: 33; 
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 28;
+    grid-row-end: 34;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Hogwarts Express Hogsmeade */
+.hogwartsEHogsmeadeContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 35;
+    grid-row-end: 43;
+    display: flex;
+    height: 100px;
+}
+.hogwartsEHogsmeadeInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 36;
+    grid-row-end: 42;
+}
+.hogwartsEHogsmeade {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 37;
+    grid-row-end: 38;
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEHogsmeadeDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 39;
+    grid-row-end: 41; 
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEHogsmeadeImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 34;
+    grid-row-end: 42;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+
+/* Rides DA */
+/* Rides DA */
+/* Rides DA */
+
+.ridesDAContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+/* Hippogriff Flight */
+.escapeGringottsContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.escapeGringottsInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.escapeGringotts {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.escapeGringottsDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.escapeGringottsImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Hogwarts Express DA */
+.hogwartsEDAContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.hogwartsEDAInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.hogwartsEDA {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEDADetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEDAImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Hogwarts Express King Cross */
+.hogwartsEKCSContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 19;
+    grid-row-end: 27;
+    display: flex;
+    height: 100px;
+}
+.hogwartsEKCSInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 20;
+    grid-row-end: 26;
+}
+.hogwartsEKCS {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEKCSDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 23;
+    grid-row-end: 25; 
+    padding: 10pt;
+    text-align: left;
+}
+.hogwartsEKCSImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 20;
+    grid-row-end: 26;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Knight Bus */
+.knightBusContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 27;
+    grid-row-end: 35;
+    display: flex;
+    height: 100px;
+}
+.knightBusInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 28;
+    grid-row-end: 34;
+}
+.knightBus {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 29;
+    grid-row-end: 30;
+    padding: 10pt;
+    text-align: left;
+}
+.knightBusDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 31;
+    grid-row-end: 33; 
+    padding: 10pt;
+    text-align: left;
+}
+.knightBusImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 28;
+    grid-row-end: 34;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+
+/* Shops H */
+/* Shops H */
+/* Shops H */
+
+.shopsHContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+/* Dervish and Banges */
+.dervishBangesContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.dervishBangesInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.dervishBanges {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.dervishBangesDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.dervishBangesImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Filch's Emporium */
+.filchContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.filchLightsInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.filch {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.filchDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    text-align: left;
+}
+.filchImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Honeydukes */
+.honeydukesContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 19;
+    grid-row-end: 27;
+    display: flex;
+    height: 100px;
+}
+.honeydukesInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 20;
+    grid-row-end: 26;
+}
+.honeydukes {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    padding: 10pt;
+    text-align: left;
+}
+.honeydukesDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 23;
+    grid-row-end: 25; 
+    padding: 10pt;
+    text-align: left;
+}
+.honeydukesImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 20;
+    grid-row-end: 26;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Ollivanders™ */
+.ollivandersContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 27;
+    grid-row-end: 35;
+    display: flex;
+    height: 100px;
+}
+.ollivandersInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 28;
+    grid-row-end: 34;
+}
+.ollivanders {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 29;
+    grid-row-end: 30;
+    padding: 10pt;
+    text-align: left;
+}
+.ollivandersDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 31;
+    grid-row-end: 33; 
+    padding: 10pt;
+    text-align: left;
+}
+.ollivandersImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 28;
+    grid-row-end: 34;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Owl Post */
+.owlPostContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 35;
+    grid-row-end: 43;
+    display: flex;
+    height: 100px;
+}
+.owlPostInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 36;
+    grid-row-end: 42;
+}
+.owlPost {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 37;
+    grid-row-end: 38;
+    padding: 10pt;
+    text-align: left;
+}
+.owlPostDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 39;
+    grid-row-end: 41; 
+    padding: 10pt;
+    text-align: left;
+}
+.owlPostImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 34;
+    grid-row-end: 42;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+/* Shops DA */
+/* Shops DA */
+/* Shops DA */
+
+.shopsDAContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+/* Borgin and Burkes */
+.borginBurkesContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.borginBurkesInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.borginBurkes {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.borginBurkesDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.borginBurkesImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Gringotts™ Money Exchange */
+.gringottsMoneyContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.gringottsMoneysInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.gringottsMoney {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.gringottsMoneyDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    text-align: left;
+}
+.gringottsMoneyImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Madam Malkins */
+.madamMalkinsContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 19;
+    grid-row-end: 27;
+    display: flex;
+    height: 100px;
+}
+.madamMalkinsInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 20;
+    grid-row-end: 26;
+}
+.madamMalkins {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    padding: 10pt;
+    text-align: left;
+}
+.madamMalkinsDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 23;
+    grid-row-end: 25; 
+    padding: 10pt;
+    text-align: left;
+}
+.madamMalkinsImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 20;
+    grid-row-end: 26;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Magical Menagerie */
+.magicalMenagerieContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 27;
+    grid-row-end: 35;
+    display: flex;
+    height: 100px;
+}
+.magicalMenagerieInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 28;
+    grid-row-end: 34;
+}
+.magicalMenagerie {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 29;
+    grid-row-end: 30;
+    padding: 10pt;
+    text-align: left;
+}
+.magicalMenagerieDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 31;
+    grid-row-end: 33; 
+    padding: 10pt;
+    text-align: left;
+}
+.magicalMenagerieImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 28;
+    grid-row-end: 34;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Ollivanders DA */
+.ollivandersDAContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 35;
+    grid-row-end: 43;
+    display: flex;
+    height: 100px;
+}
+.ollivandersDAInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 36;
+    grid-row-end: 42;
+}
+.ollivandersDA {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 37;
+    grid-row-end: 38;
+    padding: 10pt;
+    text-align: left;
+}
+.ollivandersDADetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 39;
+    grid-row-end: 41; 
+    padding: 10pt;
+    text-align: left;
+}
+.ollivandersDAImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 34;
+    grid-row-end: 42;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Quality Quidditch */
+.qualityQuidditchContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 43;
+    grid-row-end: 51;
+    display: flex;
+}
+.qualityQuidditchInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 44;
+    grid-row-end: 50;
+}
+.qualityQuidditch {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 45;
+    grid-row-end: 46;
+    padding: 10pt;
+    text-align: left;
+}
+.qualityQuidditchDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 47;
+    grid-row-end: 49;
+    padding: 10pt;
+    text-align: left;
+}
+.qualityQuidditchImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 42;
+    grid-row-end: 50; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Scribbulus */
+.scribbulusContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 51;
+    grid-row-end: 59;
+    display: flex;
+    height: 100px;
+}
+.scribbulusLightsInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 52;
+    grid-row-end: 58;
+}
+.scribbulus {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 53;
+    grid-row-end: 54;
+    padding: 10pt;
+    text-align: left;
+}
+.scribbulusDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 55;
+    grid-row-end: 57; 
+    padding: 10pt;
+    text-align: left;
+}
+.scribbulusImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 52;
+    grid-row-end: 58;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Sugarplum's Sweetshop */
+.sugarplumsContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 59;
+    grid-row-end: 67;
+    display: flex;
+    height: 100px;
+}
+.sugarplumsInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 60;
+    grid-row-end: 66;
+}
+.sugarplums {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 61;
+    grid-row-end: 62;
+    padding: 10pt;
+    text-align: left;
+}
+.sugarplumsDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 63;
+    grid-row-end: 65; 
+    padding: 10pt;
+    text-align: left;
+}
+.sugarplumsImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 60;
+    grid-row-end: 66;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Wands by Gregorovitch */
+.gregorovitchContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 67;
+    grid-row-end: 75;
+    display: flex;
+    height: 100px;
+}
+.gregorovitchInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 68;
+    grid-row-end: 74;
+}
+.gregorovitch {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 69;
+    grid-row-end: 70;
+    padding: 10pt;
+    text-align: left;
+}
+.gregorovitchDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 71;
+    grid-row-end: 73; 
+    padding: 10pt;
+    text-align: left;
+}
+.gregorovitchImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 68;
+    grid-row-end: 74;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Weasleys Wizard Wheezes */
+.weasleyswwContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 75;
+    grid-row-end: 83;
+    display: flex;
+    height: 100px;
+}
+.weasleyswwInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 76;
+    grid-row-end: 82;
+}
+.weasleysww {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 77;
+    grid-row-end: 78;
+    padding: 10pt;
+    text-align: left;
+}
+.weasleyswwDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 79;
+    grid-row-end: 81; 
+    padding: 10pt;
+    text-align: left;
+}
+.weasleyswwImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 74;
+    grid-row-end: 82;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Wiseacre's Wizarding Equipment */
+.wiseacresContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 83;
+    grid-row-end: 91;
+    display: flex;
+    height: 100px;
+}
+.wiseacresInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 84;
+    grid-row-end: 90;
+}
+.wiseacres {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 85;
+    grid-row-end: 80;
+    padding: 10pt;
+    text-align: left;
+}
+.wiseacresDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 87;
+    grid-row-end: 89; 
+    padding: 10pt;
+    text-align: left;
+}
+.wiseacresImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 82;
+    grid-row-end: 90;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+
+/* Shows H */
+/* Shows H */
+/* Shows H */
+
+.showsHContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+/* Frog Choir */
+.frogChoirContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.frogChoirInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.frogChoir {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.frogChoirDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.frogChoirImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Nighttime Lights */
+.nighttimeLightsContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.nighttimeLightsInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.nighttimeLights {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.nighttimeLightsDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    text-align: left;
+}
+.nighttimeLightsImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Triwizard Rally */
+.triwizardRallyContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 19;
+    grid-row-end: 27;
+    display: flex;
+    height: 100px;
+}
+.triwizardRallyInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 20;
+    grid-row-end: 26;
+}
+.triwizardRally {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    padding: 10pt;
+    text-align: left;
+}
+.triwizardRallyDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 23;
+    grid-row-end: 25; 
+    padding: 10pt;
+    text-align: left;
+}
+.triwizardRallyImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 20;
+    grid-row-end: 26;
+    border-radius: 5pt;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+/* Shows DA */
+/* Shows DA */
+/* Shows DA */
+
+.showsDAContainer {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    width: 60vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px black, 5px 5px 10px white;
+    padding-bottom: 30pt;
+}
+/* Celestina Warbeck */
+.celestinaContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+}
+.celestinaInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.celestina {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 10pt;
+    text-align: left;
+}
+.celestinaDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    padding: 10pt;
+    text-align: left;
+}
+.celestinaImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10; 
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+/* Beedle The Bard */
+.beedleTheBardContainer {
+    grid-column-start: 1;
+    grid-column-end: 22;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    display: flex;
+    height: 100px;
+}
+.beedleTheBardInfo {
+    grid-column-start: 9;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 18;
+}
+.beedleTheBard {
+    grid-column-start: 12;
+    grid-column-end: 18;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    padding: 10pt;
+    text-align: left;
+}
+.beedleTheBardDetail {
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row-start: 15;
+    grid-row-end: 17; 
+    padding: 10pt;
+    padding: 10pt;
+    text-align: left;
+}
+.beedleTheBardImage {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 18;
+    border-radius: 5%;
+    padding: 2px;
+    height: 170px;
+    width: 255px;
+}
+
+
+/* About Pages */
+/* About Pages */
+/* About Pages */
+
+.aboutHp {
+    background-image: none;
+    /* change cursor to hand on hover */
+    cursor: pointer;
+    padding: 0;
+}
+.aboutHp:hover{
+    color: red;
+    font-weight: 900;
+}
+.entertainment {
+    background-image: none;
+    /* change cursor to hand on hover */
+    cursor: pointer;
+    padding: 0;
+}
+.entertainment > div {
+    justify-content: center !important;
+    text-align: center !important;
+}
+.entertainment:hover {
+    color: red;
+    font-weight: 900;
+}
+.planTrip {
+    background-image: none;
+    /* change cursor to hand on hover */
+    cursor: pointer;
+    padding: 0;
+}
+.planTrip:hover {
+    color: red;
+    font-weight: 900;
+}
+
+/* Movies */
+/* Movies */
+/* Movies */
+
+
+.moviesBody {
+    background-color:  rgb(27, 27, 27);
+}
+.backgroundActors {
+    background-image: url(/images/aboutImages/floors.jpg);    
+}
+.titleMovies {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+.moviesH1 {
+    font-size: 14pt;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 30pt;
+    padding-left: 0;
+}
+.moviesP {
+    font-size: 8pt;
+    text-align: left;
+    margin-top: -2pt;
+}
+.nameLink {
+    color: black;
+}
+.nameLink:hover {
+    color: red;
+    font-weight: 900;
+}
+.realActorInfo {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 140pt;
+    margin-right: 140pt;
+}
+.actorsImages{
+    border: solid;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    font-family: myFirstFont;
+    text-align: center;
+
+}
+.polaroidGranger {
+    border: solid black;
+    height: 210px;
+    width: 175px;
+    transform: rotate(-25deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slide1 {
+    position: absolute;
+    left: -600px;
+    animation: slide1 2s forwards;
+}
+/* slide in from left */
+@keyframes slide1 {
+    100% { left: 20vw; }
+}
+.pPictureGranger {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    background-image: url(/images/aboutImages/moviesImages/profileHermione.jpg);
+    background-size: cover;
+}
+.characterGranger {
+    height: 30px;
+    width: 165px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 24pt;
+}
+.polaroidPotter {
+    border: solid black;
+    height: 210px;
+    width: 175px;
+    transform: rotate(15deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slide2 {
+    position: absolute;
+    left: -600px;
+    animation: slide2 2s forwards;
+}
+/* slide in from left */
+@keyframes slide2 {
+    100% { left: 42vw; }
+}
+.pPicturePotter {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    background-image: url(/images/aboutImages/moviesImages/profileHarry.jpeg);
+    background-size: cover;
+}
+.characterPotter {
+    height: 30px;
+    width: 165px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 24pt;
+}
+.polaroidWeasley {
+    border: solid black;
+    height: 210px;
+    width: 175px;
+    transform: rotate(-17deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slide3 {
+    position: absolute;
+    left: -600px;
+    animation: slide3 2s forwards;
+}
+/* slide in from left */
+@keyframes slide3 {
+    100% { left: 61vw; }
+}
+.pPictureWeasley {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    background-image: url(/images/aboutImages/moviesImages/profileRon.jpg);
+    background-size: cover;
+}
+.characterWeasley {
+    height: 30px;
+    width: 165px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 24pt;
+}
+.movies {
+    height: 225px;
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    font-size: 8pt;
+    font-family: "roboto";
+    padding: 10pt;
+}
+.moviePic {
+    height: 100%;
+    width: 33%;
+    margin-top: 7pt;
+}
+.availibilityContainer {
+    height: 100%;
+    width: 66%;
+    color: white;
+}
+.availibility {
+    height: 50%;
+    align-content: center;
+    align-content: space-around;
+}
+.streaming {
+    height: 50%;
+    display: flex;
+}
+.youTube {
+    height: 100%;
+    width: 20%;
+    margin-top: 15pt;
+}
+.amazonPrime {
+    height: 100%;
+    width: 20%;
+    margin-top: 15pt;
+}
+.iTunes {
+    height: 100%;
+    width: 20%;
+    margin-top: 15pt;
+}
+.googlePlay {
+    height: 100%;
+    width: 20%;
+    margin-top: 15pt;
+}
+.vudu {
+    height: 100%;
+    width: 20%;
+    margin-top: 15pt;
+}
+
+/* Books */
+/* Books */
+/* Books */
+
+/* Modal */
+/* Opaque buffer between Books Page and Modal */
+.modalDialog {
+    position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+    margin: auto;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	transition: opacity .5s ease-in;
+    pointer-events: none;
+    
+}
+/* Modal size and Background Image */
+.modalDialog > div {
+	position: relative;
+	margin: 10% auto;
+	border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* image sourced from https://wallpaper-gallery.net/gallery/harry-potter-houses-wallpaper.html */
+    background-image: url("/images/banner.jpg");
+    width: 600px;
+    height: 375px;
+    box-shadow: 2px 2px 10px white, 2px 2px 10px black;
+}
+h6 {
+    /* modal font */
+    font-family: myFirstFont;
+    font-size: 60px;
+    margin: 0;
+    color: white;
+    padding: 20pt 10pt;
+}
+.closeModal {
+	background: gray;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+    text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+    box-shadow: 2px 2px 10px white, 2px 2px 10px black;
+    text-shadow: 4px black;
+}
+/* onclick will allow modal to appear */
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.booksBody {
+    background-color:  rgb(27, 27, 27);
+}
+.backgroundActors {
+    background-image: url(/images/aboutImages/floors.jpg);
+}
+.titleBooks {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+.moviesH1 {
+    font-size: 14pt;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 10pt;
+}
+.moviesP {
+    font-size: 8pt;
+    text-align: left;
+    /* margin-top: 10pt; */
+}
+.booksInfo {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 140pt;
+    margin-right: 140pt;
+}
+.booksImages {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    font-family: myFirstFont;
+    text-align: center;
+}
+.polaroidBook1 {
+    border: solid black;
+    height: 150px;
+    width: 125px;
+    transform: rotate(15deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+/* slide in from left */
+#slideOne {
+    position: absolute;
+    left: -600px;
+    animation: slideOne 2s forwards;
+}
+@keyframes slideOne {
+    100% { left: 3vw; }
+}
+.pPictureBook1 {
+    border: solid black;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
+    background-image: url(/images/aboutImages/booksImages/hpA1.jpg);
+    background-size: cover;
+}
+.book1 {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    color: black;
+}
+.polaroidBook2 {
+    border: solid black;
+    height: 150px;
+    width: 125px;
+    transform: rotate(-15deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slideTwo {
+    position: absolute;
+    left: -600px;
+    animation: slideTwo 2s forwards;
+}
+/* slide in from left */
+@keyframes slideTwo {
+    100% { left: 15vw; }
+}
+.pPictureBook2{
+    border: solid black;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
+    background-image: url(/images/aboutImages/booksImages/hpA2.jpg);
+    background-size: cover;
+}
+.book2 {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    padding: auto;
+    color: black;
+}
+.polaroidBook3 {
+    border: solid black;
+    height: 150px;
+    width: 125px;
+    transform: rotate(-25deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slideThree {
+    position: absolute;
+    left: -600px;
+    animation: slideThree 2s forwards;
+}
+/* slide in from left */
+@keyframes slideThree {
+    100% { left: 29vw; }
+}
+.pPictureBook3 {
+    border: solid black;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
+    background-image: url(/images/aboutImages/booksImages/hpA3.jpg);
+    background-size: cover;
+}
+.book3 {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    padding: auto;
+    color: black;
+}
+.polaroidBook4 {
+    border: solid black;
+    height: 150px;
+    width: 125px;
+    transform: rotate(-15deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slideFour {
+    position: absolute;
+    left: -600px;
+    animation: slideFour 2s forwards;
+}
+/* slide in from left */
+@keyframes slideFour {
+    100% { left: 43vw; }
+}
+.pPictureBook4 {
+    border: solid black;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
+    background-image: url(/images/aboutImages/booksImages/hpA4.jpg);
+    background-size: cover;
+}
+.book4 {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    padding: auto;
+    color: black;
+}
+.polaroidBook5 {
+    border: solid black;
+    height: 150px;
+    width: 125px;
+    transform: rotate(25deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slideFive {
+    position: absolute;
+    left: -600px;
+    animation: slideFive 2s forwards;
+}
+/* slide in from left */
+@keyframes slideFive {
+    100% { left: 59vw; }
+}
+.pPictureBook5 {
+    border: solid black;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
+    background-image: url(/images/aboutImages/booksImages/hpA5.jpg);
+    background-size: cover;
+}
+.book5 {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    padding: auto;
+    color: black;
+}
+.polaroidBook6 {
+    border: solid black;
+    height: 150px;
+    width: 125px;
+    transform: rotate(-15deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slideSix {
+    position: absolute;
+    left: -600px;
+    animation: slideSix 2s forwards;
+}
+/* slide in from left */
+@keyframes slideSix {
+    100% { left: 71vw; }
+}
+.pPictureBook6 {
+    border: solid black;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
+    background-image: url(/images/aboutImages/booksImages/hpA6.jpg);
+    background-size: cover;
+}
+.book6 {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    padding: auto;
+    color: black;
+}
+.polaroidBook7 {
+    border: solid black;
+    height: 150px;
+    width: 125px;
+    transform: rotate(5deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+}
+#slideSeven {
+    position: absolute;
+    left: -600px;
+    animation: slideSeven 2s forwards;
+}
+/* slide in from left */
+@keyframes slideSeven {
+    100% { left: 85vw; }
+}
+.pPictureBook7 {
+    border: solid black;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
+    background-image: url(/images/aboutImages/booksImages/hpA7.jpg);
+    background-size: cover;
+}
+.book7 {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    padding: auto;
+    color: black;
+}
+.movies {
+    height: 225px;
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    font-size: 8pt;
+    font-family: "roboto";
+}
+.moviePic {
+    height: 100%;
+    width: 33%;
+    margin-top: 7pt;
+}
+.availibilityContainer {
+    height: 100%;
+    width: 66%;
+    color: white;
+}
+.availibility {
+    height: 50%;
+    align-content: center;
+    align-content: space-around;
+}
+.streaming {
+    height: 50%;
+    display: flex;
+}
+.appleBooks {
+    height: 100%;
+    width: 25%;
+    margin-top: 15pt;
+}
+.audible {
+    height: 100%;
+    width: 25%;
+    margin-top: 15pt;
+}
+.audibleCircle {
+    border-radius: solid 50px;
+}
+.barnesNoble {
+    height: 100%;
+    width: 25%;
+    margin-top: 15pt;
+}
+.googlePlayBooks {
+    height: 100%;
+    width: 25%;
+    margin-top: 15pt;
+}
+
+
+/* JK */
+/* JK */
+/* JK */
+
+.aboutBody {
+    background-color:  rgb(27, 27, 27);
+}
+.backgroundJK {
+    background-image: url(/images/aboutImages/floors.jpg);
+    margin: 5pt  50pt 50pt; 
+    padding: 10pt;
+    border-radius: 2pt;
+    box-shadow: 2px 2px 10px white, 2px 2px 10px black;
+}
+.titleMovies {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+.jkLink {
+    color: black;
+    text-shadow: none;
+}
+.jkImages{
+    height: 300px;
+    width: 300px;
+    font-family: myFirstFont;
+    float: left;
+    display: flex;
+}
+.polaroidJK {
+    border: solid black;
+    height: 240px;
+    width: 175px;
+    transform: rotate(-25deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 25px;
+    margin-left: 40pt;
+    text-align: center;
+}
+#slideJK {
+    position: absolute;
+    left: -600px;
+    animation: slideJK 2s forwards;
+}
+/* slide in from left */
+@keyframes slideJK {
+    100% { left: 9vw; }
+}
+.pPictureJK {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from http://wallsdesk.com/j-k-rowling-68539/ */
+    background-image: url(/images/aboutImages/jk.jpg);
+    background-size: cover;
+}
+.polaroidARRNC {
+    border: solid black;
+    height: 240px;
+    width: 175px;
+    transform: rotate(25deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 25px;
+    margin-left: 40pt;
+    text-align: center;
+}
+#slideARRNC {
+    position: absolute;
+    left: -600px;
+    animation: slideJK 2s forwards;
+    animation-delay: 1s;
+}
+/* slide in from left */
+@keyframes slideARRNC {
+    100% { left: 9vw; }
+}
+.pPictureARRNC {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.jkrowling.com/about/ */
+    background-image: url(/images/aboutImages/AnneRowling.jpg);
+    background-size: cover;
+}
+.polaroidComicRelief {
+    border: solid black;
+    height: 240px;
+    width: 175px;
+    transform: rotate(-5deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 25px;
+    margin-left: 40pt;
+    text-align: center;
+}
+#slideComicRelief {
+    position: absolute;
+    left: -600px;
+    animation: slideComicRelief 2s forwards;
+    animation-delay: 3s;
+}
+/* slide in from left */
+@keyframes slideComicRelief {
+    100% { left: 9vw; }
+}
+.pPictureComicRelief {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.jkrowling.com/about/ */
+    background-image: url(/images/aboutImages/ComicRelief.jpg);
+    background-size: cover;
+}
+.polaroidGingerbread {
+    border: solid black;
+    height: 240px;
+    width: 215px;
+    transform: rotate(10deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 25px;
+    margin-left: 40pt;
+    text-align: center;
+}
+#slideGingerbread {
+    position: absolute;
+    left: -600px;
+    animation: slideGingerbread 2s forwards;
+    animation-delay: 5s;
+}
+/* slide in from left */
+@keyframes slideGingerbread {
+    100% { left: 9vw; }
+}
+.pPictureGingerbread {
+    border: solid black;
+    height: 165px;
+    width: 205px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.jkrowling.com/about/ */
+    background-image: url(/images/aboutImages/Gingerbread.jpg);
+    background-size: cover;
+}
+.polaroidLumos {
+    border: solid black;
+    height: 240px;
+    width: 175px;
+    transform: rotate(25deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 25px;
+    margin-left: 40pt;
+    text-align: center;
+}
+#slideLumos {
+    position: absolute;
+    left: -600px;
+    animation: slideLumos 2s forwards;
+    animation-delay: 7s;
+}
+/* slide in from left */
+@keyframes slideLumos {
+    100% { left: 9vw; }
+}
+.pPictureLumos {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.jkrowling.com/about/ */
+    background-image: url(/images/aboutImages/lumos.jpg);
+    background-size: cover;
+}
+.polaroidJK2 {
+    border: solid black;
+    height: 240px;
+    width: 175px;
+    transform: rotate(-15deg);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 25px;
+    margin-left: 40pt;
+    text-align: center;
+}
+#slideJK2 {
+    position: absolute;
+    left: -600px;
+    animation: slideJK2 2s forwards;
+    animation-delay: 10s;
+}
+/* slide in from left */
+@keyframes slideJK2 {
+    100% { left: 9vw; }
+}
+.pPictureJK2 {
+    border: solid black;
+    height: 165px;
+    width: 165px;
+    margin: auto;
+    margin-top: 3px;
+    /* image sourced from https://www.jkrowling.com/about/ */
+    background-image: url(/images/aboutImages/jkMain.jpg);
+    background-size: cover;
+}
+/* .pPictureJKCharity {
+
+} */
+.characterJK {
+    height: 30px;
+    width: 165px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 24pt;
+}
+.characterJKCharity {
+    height: 30px;
+    width: 165px;
+    margin: auto;
+    margin-top: 2px;
+    font-family: myFirstFont;
+    font-size: 16pt;
+}
+.biography {
+    color: white;
+    text-align: left;
+    text-shadow: 1px 1px black;
+    /* border-radius: 2pt; */
+}
+.jkCharity {
+    color: rgb(155, 153, 153);
+    font-weight: 600;
+}
+
+
+
+/* Footer */
+/* Footer */
+/* Footer */
+
+.siteMap {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width: 100vw;
+}
+.footerTopics {
+    font-size: 7pt;
+    color: white;
+}
+.footerLists {
+    font-size: 5pt;
+    text-decoration: none;
+    color: white;
+}
+#quotesDiv {
+    font-family: myFirstFont;
+    color: white;
+    font-size: 15pt;
+    background-color: black;
+    padding-top: 5pt;
+}
