@@ -11,11 +11,13 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Books</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Dining</title>
 </head>
+<!-- ALL HEADER AND FOOTER COMMENTS IN INDEX.HTML -->
 
-<body class="booksBody">
+<body class="entertainmentBody">
     <containernavBar>
         <header class="header">
             <!-- Modal -->
@@ -30,30 +32,28 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                             <!-- breaks for viewing -->
                             <h6>Click the Sorting Hat to Discover Your House!!</h6>
                             <!-- List -->
-                            <div class="hatFloat">
-                                <a href="https://www.pottermore.com/" target="_blank" class="modalButton">
-                                    <img class="hat" src="/images/sorting_hat.png" alt="Pottermore Logo"
-                                        style="width:150px;height:150px">
-                                </a>
-                            </div>
+                            <a href="https://www.pottermore.com/" target="_blank" class="modalButton">
+                                <img class="hat" src="../images/sorting_hat.png" alt="Pottermore Logo"
+                                    style="width:200px;height:200px">
+                            </a>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="navBar">
                 <ul class="homeButton">
-                    <a href="/index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </ul>
                 <ul onclick="showNavBarA()" class="aboutHp">
                     About
                     <div id="seeNavBarA">
-                        <a href="/pages/jkRowling.html" class="dropdown">
+                        <a href="../pages/jkRowling.html" class="dropdownA">
                             <li>JK Rowling</li>
                         </a>
-                        <a href="/pages/books.html" class="dropdown">
+                        <a href="../pages/books.html" class="dropdownA">
                             <li>Books</li>
                         </a>
-                        <a href="/pages/movies.html" class="dropdown">
+                        <a href="../pages/movies.html" class="dropdownA">
                             <li>Movies</li>
                         </a>
                     </div>
@@ -61,27 +61,31 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                 <ul onclick="showNavBarE()" class="entertainment">
                     Entertainment
                     <div id="seeNavBarE">
-                        <a href="/pages/dining.html" class="dropdown">
+                        <a href="../pages/dining.html" class="dropdown">
                             <li>Dining</li>
                         </a>
-                        <a href="/pages/rides.html" class="dropdown">
+                        <a href="../pages/rides.html" class="dropdown">
                             <li>Rides</li>
                         </a>
-                        <a href="/pages/shops.html" class="dropdown">
+                        <a href="../pages/shops.html" class="dropdown">
                             <li>Shops</li>
                         </a>
-                        <a href="/pages/shows.html" class="dropdown">
+                        <a href="../pages/shows.html" class="dropdown">
                             <li>Shows</li>
                         </a>
                     </div>
                 </ul>
                 <ul onclick="showNavBarP()" class="planTrip">
                     Plan Your Trip</a>
+                    <!-- target="_blank" will allow link to open in separate window/tab  -->
+                    <!-- will take User directly to Universal Studios Exclusive Package Deal -->
                     <div id="seeNavBarP">
                         <a href="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive"
                             target="_blank" class="dropdown">
                             <li>Vacation Packages</li>
                         </a>
+                        <!-- target="_blank" will allow link to open in separate window/tab  -->
+                        <!-- will take User directly to Universal Studios and Islands of Adventure Calendar -->
                         <a href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
                             target="_blank" class="dropdown">
                             <li>Hours of Operation</li>
@@ -150,7 +154,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <div class="movies">
         <div class="moviePic">
             <!-- image sourced from https://www.barnesandnoble.com/p/harry-potter-and-the-sorcerers-stone-j-k-rowling/1100036321/2694040851289?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Books+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=Cj0KCQjwpavpBRDQARIsAPfTwiytScvqq5i87gMhCwgD3eEo7ytQ0sB6rfqnhzVJsOhdDIvQ-_RufTQaApUAEALw_wcB -->
-            <img src="/images/aboutImages/booksImages/hp1Book.jpg" alt="Sorcerer's Stone"
+            <img src="../images/aboutImages/booksImages/hp1Book.jpg" alt="Sorcerer's Stone"
                 style="width:103pt;height:157pt">
         </div>
         <div class="availibilityContainer" id="bookOne">
@@ -173,7 +177,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://books.apple.com/us/book/harry-potter-and-the-sorcerers-stone-enhanced-edition/id1037193578"
                         target="_blank">Apple Books<br>
-                        <img src="/images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
+                        <img src="../images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -181,7 +185,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.audible.com/pd/Harry-Potter-and-the-Sorcerers-Stone-Book-1-Audiobook/B017V4IM1G?source_code=AUDORWS0718179KY7"
                         target="_blank">Audible<br>
-                        <img src="/images/aboutImages/booksImages/audible.png" alt="Audible"
+                        <img src="../images/aboutImages/booksImages/audible.png" alt="Audible"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -189,7 +193,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.barnesandnoble.com/w/harry-potter-and-the-sorcerers-stone-j-k-rowling/1100036321?ean=9781781100486#/"
                         target="_blank">Barnes & Noble<br>
-                        <img src="/images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
+                        <img src="../images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -197,7 +201,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://play.google.com/store/books/details?pcampaignid=books_read_action&id=wrOQLV6xB-wC"
                         target="_blank">Google Play<br>
-                        <img src="/images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
+                        <img src="../images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -207,7 +211,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <div class="movies">
         <div class="moviePic">
             <!-- image sourced from https://www.barnesandnoble.com/p/harry-potter-and-the-chamber-of-secrets-j-k-rowling/1004338523/2694170309759?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Books+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=Cj0KCQjwpavpBRDQARIsAPfTwizSLXXmFOiqZ7BGFibJjPhJCnVbsD1f_UwnmJV5bc_1HrPYf65dn74aAtZMEALw_wcB -->
-            <img src="/images/aboutImages/booksImages/hp2Book.jpg" alt="Chamber of Secrets"
+            <img src="../images/aboutImages/booksImages/hp2Book.jpg" alt="Chamber of Secrets"
                 style="width:103pt;height:157pt">
         </div>
         <div class="availibilityContainer" id="bookTwo">
@@ -225,7 +229,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://books.apple.com/us/book/harry-potter-and-the-chamber-of-secrets-enhanced-edition/id1037196655"
                         target="_blank">Apple Books<br>
-                        <img src="/images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
+                        <img src="../images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -233,7 +237,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.audible.com/pd/Harry-Potter-and-the-Chamber-of-Secrets-Book-2-Audiobook/B017V4IWVG?source_code=AUDORWS0718179KY7"
                         target="_blank">Audible<br>
-                        <img src="/images/aboutImages/booksImages/audible.png" alt="Audible"
+                        <img src="../images/aboutImages/booksImages/audible.png" alt="Audible"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -241,7 +245,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.barnesandnoble.com/w/harry-potter-and-the-chamber-of-secrets-j-k-rowling/1004338523?ean=9781781100509#/"
                         target="_blank">Barnes & Noble<br>
-                        <img src="/images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
+                        <img src="../images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -249,7 +253,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://play.google.com/store/books/details?pcampaignid=books_read_action&id=5iTebBW-w7QC"
                         target="_blank">Google Play<br>
-                        <img src="/images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
+                        <img src="../images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -259,7 +263,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <div class="movies">
         <div class="moviePic">
             <!-- image sourced from https://www.barnesandnoble.com/p/harry-potter-and-the-prisoner-of-azkaban-j-k-rowling/1100178339/2680730481966?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Books+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=Cj0KCQjwpavpBRDQARIsAPfTwizF0OkMyfQJ-89adFX54mnSa43CNP9gg2pljW3hdnN0sB7H732sRCQaAmJtEALw_wcB -->
-            <img src="/images/aboutImages/booksImages/hp3Book.jpg" alt="Prisoner of Azkaban"
+            <img src="../images/aboutImages/booksImages/hp3Book.jpg" alt="Prisoner of Azkaban"
                 style="width:103pt;height:157pt">
         </div>
         <div class="availibilityContainer" id="bookThree">
@@ -280,7 +284,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://books.apple.com/us/book/harry-potter-and-the-prisoner-of-azkaban-enhanced-edition/id1037196564"
                         target="_blank">Apple Books<br>
-                        <img src="/images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
+                        <img src="../images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -288,7 +292,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.audible.com/pd/Harry-Potter-and-the-Prisoner-of-Azkaban-Book-3-Audiobook/B017V4JA2Q?source_code=AUDORWS0718179KY7"
                         target="_blank">Audible<br>
-                        <img src="/images/aboutImages/booksImages/audible.png" alt="Audible"
+                        <img src="../images/aboutImages/booksImages/audible.png" alt="Audible"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -296,7 +300,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.barnesandnoble.com/w/harry-potter-and-the-prisoner-of-azkaban-j-k-rowling/1100178339?ean=9781781100516#/"
                         target="_blank">Barnes & Noble<br>
-                        <img src="/images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
+                        <img src="../images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -304,7 +308,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://play.google.com/store/books/details?pcampaignid=books_read_action&id=Sm5AKLXKxHgC"
                         target="_blank">Google Play<br>
-                        <img src="/images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
+                        <img src="../images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -314,8 +318,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <div class="movies">
         <div class="moviePic">
             <!-- image sourced from https://www.barnesandnoble.com/p/harry-potter-and-the-goblet-of-fire-j-k-rowling/1100042956/2694171935773?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Books+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=Cj0KCQjwpavpBRDQARIsAPfTwizQ44y6VpMb2eNZs1OdbFS4qfuxHRoxCKo6Lvh2kpqdia94YnSx1R0aAqnIEALw_wcB -->
-            <img src="/images/aboutImages/booksImages/hp4Book.jpg" alt="Goblet of Fire"
-                style="width:103pt;height:157pt">
+            <img src="../images/aboutImages/booksImages/hp4Book.jpg" alt="Goblet of Fire" style="width:103pt;height:157pt">
         </div>
         <div class="availibilityContainer" id="bookFour">
             <div class="availibility">
@@ -333,7 +336,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://books.apple.com/us/book/harry-potter-and-the-goblet-of-fire-enhanced-edition/id1037196765"
                         target="_blank">Apple Books<br>
-                        <img src="/images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
+                        <img src="../images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -341,14 +344,14 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.audible.com/pd/Harry-Potter-and-the-Goblet-of-Fire-Book-4-Audiobook/B017V4NUPO?source_code=AUDORWS0718179KY7"
                         target="_blank">Audible<br>
-                        <img src="/images/aboutImages/booksImages/audible.png" alt="Audible"
+                        <img src="../images/aboutImages/booksImages/audible.png" alt="Audible"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
                 <div class="barnesNoble">
                     <a class="" href="https://www.barnesandnoble.com/w/harry-potter-and-the-goblet-of-fire-j-k-rowling/1100042956?ean=9781781100523#/
                         target=" _blank">Barnes & Noble<br>
-                        <img src="/images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
+                        <img src="../images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -356,7 +359,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://play.google.com/store/books/details?pcampaignid=books_read_action&id=etukl7GfrxQC"
                         target="_blank">Google Play<br>
-                        <img src="/images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
+                        <img src="../images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -366,7 +369,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <div class="movies">
         <div class="moviePic">
             <!-- image sourced from https://www.barnesandnoble.com/p/harry-potter-and-the-order-of-the-phoenix-j-k-rowling/1100041270/2695444282464?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Books+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=Cj0KCQjwpavpBRDQARIsAPfTwiwEXH6-tR86ATNUXdZyele3s11k2JZQ4wz7MxNIKzRgO5JRgckv2mIaAsAIEALw_wcB -->
-            <img src="/images/aboutImages/booksImages/hp5Books.jpg" alt="Order of the Phoenix"
+            <img src="../images/aboutImages/booksImages/hp5Books.jpg" alt="Order of the Phoenix"
                 style="width:103pt;height:157pt">
         </div>
         <div class="availibilityContainer" id="bookFive">
@@ -387,7 +390,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://books.apple.com/us/book/harry-potter-and-the-order-of-the-phoenix-enhanced-edition/id1037196825"
                         target="_blank">Apple Books<br>
-                        <img src="/images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
+                        <img src="../images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -395,7 +398,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.audible.com/pd/Harry-Potter-and-the-Order-of-the-Phoenix-Book-5-Audiobook/B017V4NMX4?source_code=AUDORWS0718179KY7"
                         target="_blank">Audible<br>
-                        <img src="/images/aboutImages/booksImages/audible.png" alt="Audible"
+                        <img src="../images/aboutImages/booksImages/audible.png" alt="Audible"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -403,7 +406,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.barnesandnoble.com/w/harry-potter-and-the-order-of-the-phoenix-j-k-rowling/1100041270?ean=9781781100530#/"
                         target="_blank">Barnes & Noble<br>
-                        <img src="/images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
+                        <img src="../images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -411,7 +414,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://play.google.com/store/books/details?pcampaignid=books_read_action&id=zpvysRGsBlwC"
                         target="_blank">Google Play<br>
-                        <img src="/images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
+                        <img src="../images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -421,7 +424,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <div class="movies">
         <div class="moviePic">
             <!-- image sourced from https://www.barnesandnoble.com/p/harry-potter-and-the-half-blood-prince-j-k-rowling/1100079342/2661845459439?st=PLA&sid=BNB_ADL+Marketplace+Good+Used+Books+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=Cj0KCQjwpavpBRDQARIsAPfTwiwspLbFrKPmUONGv60hls3tRU_1jheIwEOtfToHgwmquJwerZjuH68aAgn5EALw_wcB -->
-            <img src="/images/aboutImages/booksImages/hp6Book.jpg" alt="Half Blood Prince"
+            <img src="../images/aboutImages/booksImages/hp6Book.jpg" alt="Half Blood Prince"
                 style="width:103pt;height:157pt">
         </div>
         <div class="availibilityContainer" id="bookSix">
@@ -441,7 +444,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://books.apple.com/us/book/harry-potter-and-the-half-blood-prince-enhanced-edition/id1037196935"
                         target="_blank">Apple Books<br>
-                        <img src="/images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
+                        <img src="../images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -449,7 +452,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.audible.com/pd/Harry-Potter-and-the-Half-Blood-Prince-Book-6-Audiobook/B017V4NOZ0?source_code=AUDORWS0718179KY7"
                         target="_blank">Audible<br>
-                        <img src="/images/aboutImages/booksImages/audible.png" alt="Audible"
+                        <img src="../images/aboutImages/booksImages/audible.png" alt="Audible"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -457,7 +460,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.barnesandnoble.com/w/harry-potter-and-the-half-blood-prince-j-k-rowling/1100079342?ean=9781781100547#/"
                         target="_blank">Barnes & Noble<br>
-                        <img src="/images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
+                        <img src="../images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -465,7 +468,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://play.google.com/store/books/details?pcampaignid=books_read_action&id=R7YsowJI9-IC"
                         target="_blank">Google Play<br>
-                        <img src="/images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
+                        <img src="../images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -475,7 +478,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
     <div class="movies">
         <div class="moviePic">
             <!-- image sourced from https://www.barnesandnoble.com/w/harry-potter-and-the-deathly-hallows-j-k-rowling/1100178133?ean=9780545010221#/ -->
-            <img src="/images/aboutImages/booksImages/hp7Book.jpg" alt="Deathly Hallows"
+            <img src="../images/aboutImages/booksImages/hp7Book.jpg" alt="Deathly Hallows"
                 style="width:103pt;height:157pt">
         </div>
         <div class="availibilityContainer" id="bookSeven">
@@ -498,14 +501,14 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://books.apple.com/us/book/harry-potter-and-the-deathly-hallows-enhanced-edition/id1037196603"
                         target="_blank">Apple Books<br>
-                        <img src="/images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
+                        <img src="../images/aboutImages/booksImages/appleBooks.png" alt="Apple Books"
                             style="width:20px;height:20px">
                     </a>
                 </div>
                 <div class="audible">
                     <a class="" href="https://play.google.com/store/movies/details?id=RzCjI3Jy7E8"
                         target="_blank">Audible<br>
-                        <img src="/images/aboutImages/booksImages/audible.png" alt="Audible"
+                        <img src="../images/aboutImages/booksImages/audible.png" alt="Audible"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -513,7 +516,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://www.audible.com/pd/Harry-Potter-and-the-Deathly-Hallows-Book-7-Audiobook/B017WJ5ZK6?source_code=AUDORWS0718179KY7"
                         target="_blank">Barnes & Noble<br>
-                        <img src="/images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
+                        <img src="../images/aboutImages/booksImages/barnesNoble.png" alt="Barnes & Noble"
                             style="width:20px;height:20px;border-radius:50px;">
                     </a>
                 </div>
@@ -521,7 +524,7 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                     <a class=""
                         href="https://play.google.com/store/books/details?pcampaignid=books_read_action&id=_oaAHiFOZmgC"
                         target="_blank">Google Play<br>
-                        <img src="/images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
+                        <img src="../images/aboutImages/moviesImages/googlePlay.png" alt="Google Play"
                             style="width:20px;height:20px">
                     </a>
                 </div>
@@ -545,25 +548,25 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                 <a href="/pages/jkRowling.html" class="footerLists dropdownAFooter">
                     <li>JK Rowling</li>
                 </a>
-                <a href="/pages/books.html" class="footerLists dropdownAFooter">
+                <a href="../pages/books.html" class="footerLists dropdownAFooter">
                     <li>Books</li>
                 </a>
-                <a href="/pages/movies.html" class="footerLists dropdownAFooter">
+                <a href="../pages/movies.html" class="footerLists dropdownAFooter">
                     <li>Movies</li>
                 </a>
             </ul>
             <ul class="entertainmentFooter footerTopics">
                 Entertainment
-                <a href="/pages/dining.html" class="footerLists dropdownEFooter">
+                <a href="../pages/dining.html" class="footerLists dropdownEFooter">
                     <li>Dining</li>
                 </a>
-                <a href="/pages/rides.html" class="footerLists dropdownEFooter">
+                <a href="../pages/rides.html" class="footerLists dropdownEFooter">
                     <li>Rides</li>
                 </a>
-                <a href="/pages/shops.html" class="footerLists dropdownEFooter">
+                <a href="../pages/shops.html" class="footerLists dropdownEFooter">
                     <li>Shops</li>
                 </a>
-                <a href="/pages/shows.html" class="footerLists dropdownEFooter">
+                <a href="../pages/shows.html" class="footerLists dropdownEFooter">
                     <li>Shows</li>
                 </a>
             </ul>
@@ -586,23 +589,23 @@ Materials from the Harry Potter series of films and from the film Fantastic Beas
                 <div class="socialMedia">
                     <a class="facebook footerLists" href="https://www.facebook.com/UniversalOrlandoResort"
                         target="_blank">
-                        <img src="/images/facebook.png" alt="Facebook Logo" style="width:20px;height:20px">
+                        <img src="../images/facebook.png" alt="Facebook Logo" style="width:20px;height:20px">
                     </a>
                     <a class="instagram footerLists" href="https://www.instagram.com/universalorlando/" target="_blank">
-                        <img src="/images/instagram.png" alt="Instagram" style="width:20px;height:20px">
+                        <img src="../images/instagram.png" alt="Instagram" style="width:20px;height:20px">
                     </a>
                     <a class="pinterest footerLists" href="https://www.pinterest.com/universalorl/" target="_blank">
-                        <img src="/images/pinterest.png" alt="Pinterest" style="width:20px;height:20px">
+                        <img src="../images/pinterest.png" alt="Pinterest" style="width:20px;height:20px">
                     </a>
                     <a class="twitter footerLists" href="https://twitter.com/UniversalORL" target="_blank">
-                        <img src="/images/twitter.png" alt="Twitter" style="width:20px;height:20px">
+                        <img src="../images/twitter.png" alt="Twitter" style="width:20px;height:20px">
                     </a>
                 </div>
             </ul>
         </div>
     </footer>
 
-    <script src="/javaScript/app.js"></script>
+    <script src="../javaScript/app.js"></script>
 </body>
 
 </html>

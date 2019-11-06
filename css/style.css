@@ -6,11 +6,11 @@ body {
 }
 .entertainmentBody {
     /* image sourced from https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Forbidden_Journey */
-    background-image: url(/images/htmlbg.png);
+    background-image: url("../images/htmlbg.png");
 }
 .logo {
     /* image sourced from https://www.syfy.com/syfywire/speed-watch-harry-potter-series-78-minutes */
-    background-image: url(/images/HarryPotter_0.jpg);
+    background-image: url("../images/HarryPotter_0.jpg");
     background-size: cover;
     width: 100vw;
     height: 76vh;
@@ -23,7 +23,7 @@ a:link {
 
 @font-face {
     font-family: myFirstFont;
-    src: url(/font/HARRYP__.TTF);
+    src: url("../font/HARRYP__.TTF");
 }
 h1 {
     font-family: myFirstFont;
@@ -72,11 +72,11 @@ h4 {
     background-size: cover;
 }
 @keyframes crestChange {
-    0% {background-image: url(/images/Gryffindor_Crest.png);}
-    25% {background-image: url(/images/Hufflepuff_Crest.png);}
-    50% {background-image: url(/images/Ravenclaw_Crest.png);}
-    75% {background-image: url(/images/Slytherin_Crest.png);}
-    100% {background-image: url(/images/Gryffindor_Crest.png);}
+    0% {background-image: url("../images/crests/Gryffindor_Crest.png");}
+    25% {background-image: url("../images/crests/Hufflepuff_Crest.png");}
+    50% {background-image: url("../images/crests/Ravenclaw_Crest.png");}
+    75% {background-image: url("../images/crests/Slytherin_Crest.png");}
+    100% {background-image: url("../images/crests/Gryffindor_Crest.png");}
 }
 .hatFloat {
     height: 200px;
@@ -1898,7 +1898,7 @@ a:hover {
     background-color:  rgb(27, 27, 27);
 }
 .backgroundActors {
-    background-image: url(/images/aboutImages/floors.jpg);    
+    background-image: url("../images/aboutImages/floors.jpg");    
 }
 .titleMovies {
     display: flex;
@@ -1964,7 +1964,7 @@ a:hover {
     width: 165px;
     margin: auto;
     margin-top: 3px;
-    background-image: url(/images/aboutImages/moviesImages/profileHermione.jpg);
+    background-image: url("../images/aboutImages/moviesImages/profileHermione.jpg");
     background-size: cover;
 }
 .characterGranger {
@@ -1999,7 +1999,7 @@ a:hover {
     width: 165px;
     margin: auto;
     margin-top: 3px;
-    background-image: url(/images/aboutImages/moviesImages/profileHarry.jpeg);
+    background-image: url("../images/aboutImages/moviesImages/profileHarry.jpeg");
     background-size: cover;
 }
 .characterPotter {
@@ -2034,7 +2034,7 @@ a:hover {
     width: 165px;
     margin: auto;
     margin-top: 3px;
-    background-image: url(/images/aboutImages/moviesImages/profileRon.jpg);
+    background-image: url("../images/aboutImages/moviesImages/profileRon.jpg");
     background-size: cover;
 }
 .characterWeasley {
@@ -2128,7 +2128,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     /* image sourced from https://wallpaper-gallery.net/gallery/harry-potter-houses-wallpaper.html */
-    background-image: url("/images/banner.jpg");
+    background-image: url("../images/banner.jpg");
     width: 600px;
     height: 375px;
     box-shadow: 2px 2px 10px white, 2px 2px 10px black;
@@ -2165,7 +2165,7 @@ h6 {
     background-color:  rgb(27, 27, 27);
 }
 .backgroundActors {
-    background-image: url(/images/aboutImages/floors.jpg);
+    background-image: url("../images/aboutImages/floors.jpg");
 }
 .titleBooks {
     display: flex;
@@ -2222,7 +2222,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
-    background-image: url(/images/aboutImages/booksImages/hpA1.jpg);
+    background-image: url("../images/aboutImages/booksImages/hpA1.jpg");
     background-size: cover;
 }
 .book1 {
@@ -2259,7 +2259,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
-    background-image: url(/images/aboutImages/booksImages/hpA2.jpg);
+    background-image: url("../images/aboutImages/booksImages/hpA2.jpg");
     background-size: cover;
 }
 .book2 {
@@ -2297,7 +2297,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
-    background-image: url(/images/aboutImages/booksImages/hpA3.jpg);
+    background-image: url("../images/aboutImages/booksImages/hpA3.jpg");
     background-size: cover;
 }
 .book3 {
@@ -2335,7 +2335,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
-    background-image: url(/images/aboutImages/booksImages/hpA4.jpg);
+    background-image: url("../images/aboutImages/booksImages/hpA4.jpg");
     background-size: cover;
 }
 .book4 {
@@ -2373,7 +2373,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
-    background-image: url(/images/aboutImages/booksImages/hpA5.jpg);
+    background-image: url("../images/aboutImages/booksImages/hpA5.jpg");
     background-size: cover;
 }
 .book5 {
@@ -2411,7 +2411,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
-    background-image: url(/images/aboutImages/booksImages/hpA6.jpg);
+    background-image: url("../images/aboutImages/booksImages/hpA6.jpg");
     background-size: cover;
 }
 .book6 {
@@ -2449,7 +2449,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.audible.com/series/Harry-Potter-Audiobooks/B0182NWM9I */
-    background-image: url(/images/aboutImages/booksImages/hpA7.jpg);
+    background-image: url("../images/aboutImages/booksImages/hpA7.jpg");
     background-size: cover;
 }
 .book7 {
@@ -2523,7 +2523,7 @@ h6 {
     background-color:  rgb(27, 27, 27);
 }
 .backgroundJK {
-    background-image: url(/images/aboutImages/floors.jpg);
+    background-image: url("../images/aboutImages/floors.jpg");
     margin: 5pt  50pt 50pt; 
     padding: 10pt;
     border-radius: 2pt;
@@ -2572,7 +2572,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from http://wallsdesk.com/j-k-rowling-68539/ */
-    background-image: url(/images/aboutImages/jk.jpg);
+    background-image: url("../images/aboutImages/jk.jpg");
     background-size: cover;
 }
 .polaroidARRNC {
@@ -2603,7 +2603,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.jkrowling.com/about/ */
-    background-image: url(/images/aboutImages/AnneRowling.jpg);
+    background-image: url("../images/aboutImages/AnneRowling.jpg");
     background-size: cover;
 }
 .polaroidComicRelief {
@@ -2634,7 +2634,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.jkrowling.com/about/ */
-    background-image: url(/images/aboutImages/ComicRelief.jpg);
+    background-image: url("../images/aboutImages/ComicRelief.jpg");
     background-size: cover;
 }
 .polaroidGingerbread {
@@ -2665,7 +2665,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.jkrowling.com/about/ */
-    background-image: url(/images/aboutImages/Gingerbread.jpg);
+    background-image: url("../images/aboutImages/Gingerbread.jpg");
     background-size: cover;
 }
 .polaroidLumos {
@@ -2696,7 +2696,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.jkrowling.com/about/ */
-    background-image: url(/images/aboutImages/lumos.jpg);
+    background-image: url("../images/aboutImages/lumos.jpg");
     background-size: cover;
 }
 .polaroidJK2 {
@@ -2727,7 +2727,7 @@ h6 {
     margin: auto;
     margin-top: 3px;
     /* image sourced from https://www.jkrowling.com/about/ */
-    background-image: url(/images/aboutImages/jkMain.jpg);
+    background-image: url("../images/aboutImages/jkMain.jpg");
     background-size: cover;
 }
 /* .pPictureJKCharity {
