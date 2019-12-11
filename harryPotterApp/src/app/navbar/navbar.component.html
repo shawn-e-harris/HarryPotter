@@ -1,0 +1,77 @@
+<header class="header">
+    <!-- Modal -->
+    <!-- appears on click of Hogwart's crest -->
+    <div>
+        <a href="#newsletter" class="modalPottermore">
+            <div class="crest" style="height: 50px; width: 50px;">
+            </div>
+            <div id="newsletter" class="modalDialog">
+                <div class="hogwartsPottermore">
+                    <a href="#closeModal" title="Close" class="closeModal">X</a>
+                    <!-- breaks for viewing -->
+                    <h6>Click the Sorting Hat to Discover Your House!!</h6>
+                    <!-- List -->
+                    <a href="https://www.pottermore.com/" target="_blank" class="modalButton">
+                        <!-- image sourced from https://harrypotter.fandom.com/wiki/Sorting_Hat -->
+                        <img class="hat" src="images/sorting_hat.png" alt="Pottermore Logo"
+                            style="width:200px;height:200px">
+                    </a>
+                </div>
+                <div class="legal"></div>
+            </div>
+        </a>
+    </div>
+    <div class="navBar">
+        <ul class="homeButton">
+            <a href="index.html">Home</a>
+        </ul>
+        <ul onclick="showNavBarA()" class="aboutHp">
+            About
+            <div id="seeNavBarA">
+                <a href="pages/jkRowling.html" class="dropdownA">
+                    <li>JK Rowling</li>
+                </a>
+                <a href="pages/books.html" class="dropdownA">
+                    <li>Books</li>
+                </a>
+                <a href="pages/movies.html" class="dropdownA">
+                    <li>Movies</li>
+                </a>
+            </div>
+        </ul>
+        <ul onclick="showNavBarE()" class="entertainment">
+            Entertainment
+            <div id="seeNavBarE">
+                <a href="pages/dining.html" class="dropdown">
+                    <li>Dining</li>
+                </a>
+                <a href="pages/rides.html" class="dropdown">
+                    <li>Rides</li>
+                </a>
+                <a href="pages/shops.html" class="dropdown">
+                    <li>Shops</li>
+                </a>
+                <a href="pages/shows.html" class="dropdown">
+                    <li>Shows</li>
+                </a>
+            </div>
+        </ul>
+        <ul onclick="showNavBarP()" class="planTrip">
+            Plan Your Trip
+            <!-- target="_blank" will allow link to open in separate window/tab  -->
+            <!-- will take User directly to Universal Studios Exclusive Package Deal -->
+            <div id="seeNavBarP">
+                <a href="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive"
+                    target="_blank" class="dropdown">
+                    <li>Vacation Packages</li>
+                </a>
+                <!-- target="_blank" will allow link to open in separate window/tab  -->
+                <!-- will take User directly to Universal Studios and Islands of Adventure Calendar -->
+                <a href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
+                    target="_blank" class="dropdown">
+                    <li>Hours of Operation</li>
+                </a>
+            </div>
+        </ul>
+    </div>
+</header>
