@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { JkRowlingComponent } from './jk-rowling/jk-rowling.component';
+import { BooksComponent } from './books/books.component';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { QuotesComponent } from './quotes/quotes.component';
     NavbarComponent,
     FooterComponent,
     HomePageComponent,
-    QuotesComponent
+    QuotesComponent,
+    JkRowlingComponent,
+    BooksComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
