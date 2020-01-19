@@ -10,6 +10,10 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { JkRowlingComponent } from './jk-rowling/jk-rowling.component';
 import { BooksComponent } from './books/books.component';
 import { MoviesComponent } from './movies/movies.component';
+import { DiningComponent } from './dining/dining.component';
+import { RidesComponent } from './rides/rides.component';
+import { ShopsComponent } from './shops/shops.component';
+import { ShowsComponent } from './shows/shows.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { MoviesComponent } from './movies/movies.component';
     QuotesComponent,
     JkRowlingComponent,
     BooksComponent,
-    MoviesComponent
+    MoviesComponent,
+    DiningComponent,
+    RidesComponent,
+    ShopsComponent,
+    ShowsComponent
   ],
   imports: [
     BrowserModule,
