@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { Routes, RouterModule } from "@angular/router";
-
 import { AppRoutingModule } from './app-routing.module';
+import { QuotesModule } from "./quotes/quotes.module"
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { QuotesComponent } from './quotes/quotes.component';
+// import { QuotesComponent } from './quotes/quotes.component';
 import { JkRowlingComponent } from './jk-rowling/jk-rowling.component';
 import { BooksComponent } from './books/books.component';
 import { MoviesComponent } from './movies/movies.component';
@@ -22,7 +22,7 @@ import { ShowsComponent } from './shows/shows.component';
     NavbarComponent,
     FooterComponent,
     HomePageComponent,
-    QuotesComponent,
+    // QuotesComponent,
     JkRowlingComponent,
     BooksComponent,
     MoviesComponent,
@@ -33,7 +33,8 @@ import { ShowsComponent } from './shows/shows.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    QuotesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
