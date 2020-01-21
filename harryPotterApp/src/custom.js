@@ -100,8 +100,8 @@ let quoteGenerator = () => {
 
 
 //call so quote appears when JS loads on page
-quoteGenerator();
+// quoteGenerator();
 
 
 
-document.getElementById("defaultOpen").click()
+// document.getElementById("defaultOpen").click()
