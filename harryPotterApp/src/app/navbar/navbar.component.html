@@ -1,77 +1,89 @@
-<header class="header">
+<body>
+  <header class="header">
     <!-- Modal -->
     <!-- appears on click of Hogwart's crest -->
     <div>
-        <a routerLink="#newsletter" class="modalPottermore">
-            <div class="crest" style="height: 50px; width: 50px;">
-            </div>
-            <div id="newsletter" class="modalDialog">
-                <div class="hogwartsPottermore">
-                    <a routerLink="#closeModal" title="Close" class="closeModal">X</a>
-                    <!-- breaks for viewing -->
-                    <!-- <h6>Click the Sorting Hat to Discover Your House!!</h6> -->
-                    <!-- List -->
-                    <a routerLink="https://www.pottermore.com/" target="_blank" class="modalButton">
-                        <!-- image sourced from https://harrypotter.fandom.com/wiki/Sorting_Hat -->
-                        <!-- <img class="hat" src="../../assets/images/sorting_hat.png" alt="Pottermore Logo"
-                            style="width:200px;height:200px"> -->
-                    </a>
-                </div>
-                <div class="legal"></div>
-            </div>
-        </a>
+      <a routerLink="#newsletter" class="modalPottermore">
+        <div class="crest" style="height: 50px; width: 50px;"></div>
+        <div id="newsletter" class="modalDialog">
+          <div class="hogwartsPottermore">
+            <a routerLink="#closeModal" title="Close" class="closeModal">X</a>
+            <!-- breaks for viewing -->
+            <!-- <h6>Click the Sorting Hat to Discover Your House!!</h6> -->
+            <!-- List -->
+            <a
+              routerLink="https://www.pottermore.com/"
+              target="_blank"
+              class="modalButton"
+            >
+              <!-- image sourced from https://harrypotter.fandom.com/wiki/Sorting_Hat -->
+              <!-- <img class="hat" src="../../assets/images/sorting_hat.png" alt="Pottermore Logo"
+                                    style="width:200px;height:200px"> -->
+            </a>
+          </div>
+          <div class="legal"></div>
+        </div>
+      </a>
     </div>
     <div class="navBar">
-        <ul class="homeButton">
-            <a routerLink="/">Home</a>
-        </ul>
-        <ul onclick="showNavBarA()" class="aboutHp">
-            About
-            <div id="seeNavBarA">
-                <a routerLink="/jkRowling" class="dropdownA">
-                    <li>JK Rowling</li>
-                </a>
-                <a routerLink="/books" class="dropdownA">
-                    <li>Books</li>
-                </a>
-                <a routerLink="/movies" class="dropdownA">
-                    <li>Movies</li>
-                </a>
-            </div>
-        </ul>
-        <ul onclick="showNavBarE()" class="entertainment">
-            Entertainment
-            <div id="seeNavBarE">
-                <a routerLink="/dining" class="dropdown">
-                    <li>Dining</li>
-                </a>
-                <a routerLink="/rides" class="dropdown">
-                    <li>Rides</li>
-                </a>
-                <a routerLink="/shops" class="dropdown">
-                    <li>Shops</li>
-                </a>
-                <a routerLink="/shows" class="dropdown">
-                    <li>Shows</li>
-                </a>
-            </div>
-        </ul>
-        <ul onclick="showNavBarP()" class="planTrip">
-            Plan Your Trip
-            <!-- target="_blank" will allow link to open in separate window/tab  -->
-            <!-- will take User directly to Universal Studios Exclusive Package Deal -->
-            <div id="seeNavBarP">
-                <a routerLink="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive"
-                    target="_blank" class="dropdown">
-                    <li>Vacation Packages</li>
-                </a>
-                <!-- target="_blank" will allow link to open in separate window/tab  -->
-                <!-- will take User directly to Universal Studios and Islands of Adventure Calendar -->
-                <a routerLink="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
-                    target="_blank" class="dropdown">
-                    <li>Hours of Operation</li>
-                </a>
-            </div>
-        </ul>
+      <ul class="homeButton">
+        <a routerLink="/">Home</a>
+      </ul>
+      <ul onclick="showNavBarA()" class="aboutHp">
+        About
+        <div id="seeNavBarA">
+          <a routerLink="/jkRowling" class="dropdownA">
+            <li>JK Rowling</li>
+          </a>
+          <a routerLink="/books" class="dropdownA">
+            <li>Books</li>
+          </a>
+          <a routerLink="/movies" class="dropdownA">
+            <li>Movies</li>
+          </a>
+        </div>
+      </ul>
+      <ul onclick="showNavBarE()" class="entertainment">
+        Entertainment
+        <div id="seeNavBarE">
+          <a routerLink="/dining" class="dropdown">
+            <li>Dining</li>
+          </a>
+          <a routerLink="/rides" class="dropdown">
+            <li>Rides</li>
+          </a>
+          <a routerLink="/shops" class="dropdown">
+            <li>Shops</li>
+          </a>
+          <a routerLink="/shows" class="dropdown">
+            <li>Shows</li>
+          </a>
+        </div>
+      </ul>
+      <ul onclick="showNavBarP()" class="planTrip">
+        Plan Your Trip
+        <!-- target="_blank" will allow link to open in separate window/tab  -->
+        <!-- will take User directly to Universal Studios Exclusive Package Deal -->
+        <div id="seeNavBarP">
+          <a
+            routerLink="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive"
+            target="_blank"
+            class="dropdown"
+          >
+            <li>Vacation Packages</li>
+          </a>
+          <!-- target="_blank" will allow link to open in separate window/tab  -->
+          <!-- will take User directly to Universal Studios and Islands of Adventure Calendar -->
+          <a
+            routerLink="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
+            target="_blank"
+            class="dropdown"
+          >
+            <li>Hours of Operation</li>
+          </a>
+        </div>
+      </ul>
     </div>
-</header>
+  </header>
+  <script src="../../custom.js"></script>
+</body>
