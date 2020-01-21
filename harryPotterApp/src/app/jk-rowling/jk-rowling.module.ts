@@ -14,4 +14,4 @@ import { JkRowlingComponent } from "./jk-rowling.component"
   ],
   bootstrap: [JkRowlingComponent]
 })
-export class AppModule { }
+export class JkRowlingModule { }

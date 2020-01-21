@@ -14,4 +14,4 @@ import { BooksComponent } from "./books.component"
   ],
   bootstrap: [BooksComponent]
 })
-export class AppModule { }
+export class BooksModule { }

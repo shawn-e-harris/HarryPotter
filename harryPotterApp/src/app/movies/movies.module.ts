@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { QuotesModule } from "../quotes/quotes.module"
-import { MoviesComponent } from "./movies.component"
+import { QuotesModule } from "../quotes/quotes.module";
+import { MoviesComponent } from "./movies.component";
 
 @NgModule({
   declarations: [
@@ -14,4 +14,4 @@ import { MoviesComponent } from "./movies.component"
   ],
   bootstrap: [MoviesComponent]
 })
-export class AppModule { }
+export class MoviesModule { }

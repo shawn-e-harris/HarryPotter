@@ -14,4 +14,4 @@ import { DiningComponent } from "./dining.component"
   ],
   bootstrap: [DiningComponent]
 })
-export class AppModule { }
+export class DiningModule { }
