@@ -88,15 +88,17 @@
   <script src="../../custom.js"></script>
 </body>
 
-<a mat-button [matMenuTriggerFor]="aboveMenu" routerLink="/">Home</a>
+<a mat-button [matMenuTriggerFor]="home" routerLink="/">Home</a>
 
-<button mat-button [matMenuTriggerFor]="beforeMenu">Park Entertainment</button>
-<mat-menu #beforeMenu="matMenu" yPosition="below">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
+<button mat-button [matMenuTriggerFor]="entertainment">Park Entertainment</button>
+<mat-menu #entertainment="matMenu" yPosition="below">
+  <a mat-menu-item routerLink="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive"
+  target="_blank">Vacation Packages</a>
+  <a mat-menu-item routerLink="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
+  target="_blank">Hours of Operation</a>
 </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="afterMenu">Plan Your Trip</button>
+<!-- <button mat-button [matMenuTriggerFor]="afterMenu">Plan Your Trip</button>
 <mat-menu #afterMenu="matMenu" yPosition="below">
   <button mat-menu-item>Item 1</button>
   <button mat-menu-item>Item 2</button>
@@ -106,4 +108,4 @@
 <mat-menu #belowMenu="matMenu" yPosition="below">
   <button mat-menu-item>Item 1</button>
   <button mat-menu-item>Item 2</button>
-</mat-menu>
+</mat-menu> -->
