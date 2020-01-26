@@ -14,6 +14,9 @@ import { DiningComponent } from './dining/dining.component';
 import { RidesComponent } from './rides/rides.component';
 import { ShopsComponent } from './shops/shops.component';
 import { ShowsComponent } from './shows/shows.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ShowsComponent } from './shows/shows.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    QuotesModule
+    QuotesModule,
+    BrowserAnimationsModule,
+
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

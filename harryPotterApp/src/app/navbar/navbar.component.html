@@ -1,24 +1,24 @@
-<body>
-  <header class="header">
-    <!-- Modal -->
-    <!-- appears on click of Hogwart's crest -->
+<!-- <body>
+  <mat-menu class="header">
+    !-- Modal --
+    !-- appears on click of Hogwart's crest --
     <div>
       <a routerLink="#newsletter" class="modalPottermore">
         <div class="crest" style="height: 50px; width: 50px;"></div>
         <div id="newsletter" class="modalDialog">
           <div class="hogwartsPottermore">
             <a routerLink="#closeModal" title="Close" class="closeModal">X</a>
-            <!-- breaks for viewing -->
-            <!-- <h6>Click the Sorting Hat to Discover Your House!!</h6> -->
-            <!-- List -->
+            !-- breaks for viewing --
+            !-- <h6>Click the Sorting Hat to Discover Your House!!</h6> --
+            !-- List --
             <a
               routerLink="https://www.pottermore.com/"
               target="_blank"
               class="modalButton"
             >
-              <!-- image sourced from https://harrypotter.fandom.com/wiki/Sorting_Hat -->
-              <!-- <img class="hat" src="../../assets/images/sorting_hat.png" alt="Pottermore Logo"
-                                    style="width:200px;height:200px"> -->
+              !-- image sourced from https://harrypotter.fandom.com/wiki/Sorting_Hat --
+              !-- <img class="hat" src="../../assets/images/sorting_hat.png" alt="Pottermore Logo"
+                                    style="width:200px;height:200px"> --
             </a>
           </div>
           <div class="legal"></div>
@@ -62,8 +62,8 @@
       </ul>
       <ul onclick="showNavBarP()" class="planTrip">
         Plan Your Trip
-        <!-- target="_blank" will allow link to open in separate window/tab  -->
-        <!-- will take User directly to Universal Studios Exclusive Package Deal -->
+        !-- target="_blank" will allow link to open in separate window/tab  --
+        !-- will take User directly to Universal Studios Exclusive Package Deal --
         <div id="seeNavBarP">
           <a
             routerLink="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive"
@@ -72,8 +72,8 @@
           >
             <li>Vacation Packages</li>
           </a>
-          <!-- target="_blank" will allow link to open in separate window/tab  -->
-          <!-- will take User directly to Universal Studios and Islands of Adventure Calendar -->
+          !-- target="_blank" will allow link to open in separate window/tab  --
+          !-- will take User directly to Universal Studios and Islands of Adventure Calendar --
           <a
             routerLink="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
             target="_blank"
@@ -84,6 +84,40 @@
         </div>
       </ul>
     </div>
-  </header>
+  </mat-menu>
   <script src="../../custom.js"></script>
-</body>
+</body> -->
+
+<!-- <mat-menu #appMenu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Help</button>
+</mat-menu> -->
+
+<!-- <button mat-icon-button [matMenuTriggerFor]="appMenu">
+  <mat-icon>more_vert</mat-icon>
+</button> -->
+
+<button mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
