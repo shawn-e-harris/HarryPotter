@@ -87,26 +87,27 @@
   </header>
   <script src="../../custom.js"></script>
 </body>
-
-<button mat-button routerLink="/">Home</button>
-
-<button mat-button [matMenuTriggerFor]="entertainment">Park Entertainment</button>
-<mat-menu #entertainment="matMenu" yPosition="below">
-  <button mat-menu-item routerLink="/dining">Dining</button>
-  <button mat-menu-item routerLink="/rides">Rides</button>
-  <button mat-menu-item routerLink="/shops">Shops</button>
-  <button mat-menu-item routerLink="/shows">Shows</button>
-</mat-menu>
-
-<button mat-button [matMenuTriggerFor]="planTrip">Plan Your Trip</button>
-<mat-menu #planTrip="matMenu" yPosition="below">
-  <a mat-menu-item href="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive" target="_blank">Vacation Packages</a>
-  <a mat-menu-item href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida" target="_blank">Hours of Operation</a>
-</mat-menu>
-
+<nav>
+  <button mat-button routerLink="/">Home</button>
+  
+  <button mat-button [matMenuTriggerFor]="entertainment">Park Entertainment</button>
+  <mat-menu #entertainment="matMenu" yPosition="below">
+    <button mat-menu-item routerLink="/dining">Dining</button>
+    <button mat-menu-item routerLink="/rides">Rides</button>
+    <button mat-menu-item routerLink="/shops">Shops</button>
+    <button mat-menu-item routerLink="/shows">Shows</button>
+  </mat-menu>
+  
+  <button mat-button [matMenuTriggerFor]="planTrip">Plan Your Trip</button>
+  <mat-menu #planTrip="matMenu" yPosition="below">
+    <a mat-menu-item href="https://www.universalorlando.com/web/en/us/tickets-packages/vacation-packages/the-wizarding-world-of-harry-potter-exclusive" target="_blank">Vacation Packages</a>
+    <a mat-menu-item href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida" target="_blank">Hours of Operation</a>
+  </mat-menu>
+  
 <button mat-button [matMenuTriggerFor]="morePotter">More Potter</button>
 <mat-menu #morePotter="matMenu" yPosition="below">
   <button mat-menu-item routerLink="/books">Books</button>
   <button mat-menu-item routerLink="/movies">Movies</button>
   <button mat-menu-item routerLink="/jkRowling">JK Rowling</button>
 </mat-menu>
+</nav>
