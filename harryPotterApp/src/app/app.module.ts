@@ -17,6 +17,7 @@ import { ShowsComponent } from './shows/shows.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatMenuModule } from '@angular/material/menu';
+import { FlexModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MatMenuModule } from '@angular/material/menu';
     QuotesModule,
     BrowserAnimationsModule,
 
-    MatMenuModule
+    MatMenuModule,
+    FlexModule
   ],
   providers: [],
   bootstrap: [AppComponent]
